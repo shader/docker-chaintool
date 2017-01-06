@@ -16,8 +16,7 @@ RUN set -x \
 	    && [ "${JAVA_HOME}/bin/javac" = "$(which javac)" ] \
     && git clone https://github.com/hyperledger/fabric-chaintool \
     && cd fabric-chaintool \
-    && make install \
-    && go get -d -v chaincode
+    && make install
 
 RUN echo -e "#!/bin/sh\nexec chaintool \$@" >/chaintool.sh \
     && cat /chaintool.sh \
