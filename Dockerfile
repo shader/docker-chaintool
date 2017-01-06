@@ -1,6 +1,5 @@
 FROM znly/protoc
-MAINTAINER Samuel Christie <samuel.christie@live.com>
-
+MAINTAINER Samuel Christie <emailium@gmail.com>
 
 ENV LANG C.UTF-8
 
