@@ -11,7 +11,7 @@ ENV JAVA_ALPINE_VERSION 8.111.14-r0
 
 RUN set -x \
 	&& apk add --no-cache \
-        git	bash wget ca-certificates go \
+        git	bash wget ca-certificates go pkgconf \
         openjdk8="$JAVA_ALPINE_VERSION" \
 	    && [ "${JAVA_HOME}/bin/javac" = "$(which javac)" ] \
     && git clone https://github.com/hyperledger/fabric-chaintool \
